@@ -1,0 +1,72 @@
+
+    **Abstract:** Octant is a tool that provides developers with a browser-based visual interface for managing Kubernetes. Octant allows developers to inspect a Kubernetes cluster and better understand the state of a application running on that cluster. The dashboard allows users to visualize Kubernetes workloads, objects and resources all while running locally on your device. 
+
+
+    The Octant team has been working on a lot of new features that improve the overall developer experience that will be showcased including improved troubleshooting capabilities, terminal improvements, YAML editors, improved navigation and improved plugin support.
+
+
+     
+
+
+    **Audience Level**: Intermediate
+
+
+    _Do we want to target this toward users that are familiar with Octant and focus on enhancements. I recommend including a brief track (time permitting) for an orientation on Octant for new users and call it a refresher for returning users or users that may have left but are thinking of coming back._
+
+**Topics:**
+
+
+
+*   Intro to Octant/Refresher
+*   Refresh on what we have been working on with Octant since October:
+    *   Improved troubleshooting capabilities 
+        *   More granular logging support for plugins
+    *   Improved terminal user experience
+        *   Improved terminal tab capabilities (the same terminal you know and love but now even better!)
+        *   
+    *   Improved YAML object aware editor 
+    *   New navigation
+    *   Plugin demo
+
+**Improved Troubleshooting Capabilities**
+
+
+
+*   Octant provides extensibility to multiple plugins and as a result, log outputs can be cumbersome for users to sift through before getting to the specific log item that is needed to debug or troubleshoot a plugin. With this release, Octant makes it easier for users to sift through the logging output 
+*   Include brief demo 
+
+**Improved Terminal User Experience**
+
+
+
+*   Octant has an existing terminal tab that best supported use cases for single containers connected and visible by default since it is the only container in the terminal 
+*   We found that many users were connecting multiple containers and that the existing terminal experience did not offer a way to choose which container to open in the terminal
+*   Octant now offers a way to select from multiple connected containers via a dropdown accessible from the terminal tab. The first container is still connected to by default and users can choose to connect to another container via the drop down menu and work from there in the terminal.
+    *   _Do we need to say anything here about how the drop down list gets populated_? 
+*   When a user selects a new container from the drop down while they are connected to an existing container, the current container session will be disconnected and a new session will connect to the new container, so that the newly selected container will be visible in the terminal window. 
+*   Include brief demo.
+
+**Object Aware YAML Editor**
+
+
+
+*   Previously octant provided users with a YAML viewer that did not include edit capabilities and that also did not support object awareness.
+*   With the latest release, Octant will provide an object aware YAML editor that provides support for OpenAPI schemas including:
+    *   Schemas provided by the cluster’s API in the current context
+    *   Additional open APIs that can be provided by the user
+*   _Can we add benefits for object awareness?_
+*   Include brief demo.
+
+**Improved Navigation**
+
+
+
+*   Need more detail here.
+*   Include brief demo. 
+
+**Plugin Improvements**
+
+
+
+*   The octant plugin system has been improved. Previously installing an Octant plugin required a restart. We’ve made this process easier for users so that plugins can now be installed without the need to restart.
+*   Include brief demo.
